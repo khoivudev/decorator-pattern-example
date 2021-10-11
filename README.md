@@ -1,2 +1,2 @@
 - composition
-- ![alt text](http://url/out/design/class_diagram/class_diagram.png)
+- ![alt text](https://github.com/khoivudev/decorator-pattern-example/blob/master/design/out/design/class_diagram/class_diagram.png)
