@@ -4,48 +4,48 @@ abstract class Beverage {
     getDescription()
     cost()
 }
-
-class HouseBlend extends Beverage {
-    cost()
+package MainDrink <<Rectangle>> {
+    class HouseBlend extends Beverage {
+        cost()
+    }
+    class DarkRoast extends Beverage {
+        cost()
+    }
+    class Espresso extends Beverage {
+        cost()
+    }
+    class Decaf extends Beverage {
+        cost()
+    }
 }
-class DarkRoast extends Beverage {
-    cost()
-}
-class Espresso extends Beverage {
-    cost()
-}
-class Decaf extends Beverage {
-    cost()
-}
-
 abstract CondimentDecorator extends Beverage {
     getDescription()
 }
+package Condiment <<Rectangle>> {
+    class Milk extends CondimentDecorator {
+        Beverage beverage 
+        cost()
+        getDescription()
+    }
 
-class Milk extends CondimentDecorator {
-    Beverage beverage 
-    cost()
-    getDescription()
+    class Mocha extends CondimentDecorator {
+        Beverage beverage 
+        cost()
+        getDescription()
+    }
+
+    class Soy extends CondimentDecorator {
+        Beverage beverage 
+        cost()
+        getDescription()
+    }
+
+    class Whip extends CondimentDecorator {
+        Beverage beverage 
+        cost()
+        getDescription()
+    }
 }
-
-class Mocha extends CondimentDecorator {
-    Beverage beverage 
-    cost()
-    getDescription()
-}
-
-class Soy extends CondimentDecorator {
-    Beverage beverage 
-    cost()
-    getDescription()
-}
-
-class Whip extends CondimentDecorator {
-    Beverage beverage 
-    cost()
-    getDescription()
-}
-
 CondimentDecorator --> Beverage : component
 
 @enduml
