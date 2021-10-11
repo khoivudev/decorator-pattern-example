@@ -1,6 +1,7 @@
 public class Decaf extends Beverage{
-    public Decaf() {
+    public Decaf(Size size) {
         description = "Decaf";
+        setSize(size);
     }
 
     public double cost() {

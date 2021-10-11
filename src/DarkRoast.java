@@ -1,6 +1,7 @@
 public class DarkRoast extends Beverage{
-    public DarkRoast() {
+    public DarkRoast(Size size) {
         description = "DarkRoast";
+        setSize(size);
     }
 
     public double cost() {

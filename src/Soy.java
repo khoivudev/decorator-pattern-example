@@ -1,6 +1,4 @@
-public class Soy extends CondimentDecorator {
-    Beverage beverage;
-    
+public class Soy extends CondimentDecorator {    
     public Soy(Beverage beverage) {
         this.beverage = beverage;
     }
