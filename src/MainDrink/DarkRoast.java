@@ -1,4 +1,8 @@
-public class DarkRoast extends Beverage{
+package MainDrink;
+
+import Beverage.Beverage;
+
+public class DarkRoast extends Beverage {
     public DarkRoast(Size size) {
         description = "DarkRoast";
         setSize(size);

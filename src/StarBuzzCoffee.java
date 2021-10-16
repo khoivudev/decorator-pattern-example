@@ -1,3 +1,7 @@
+import Beverage.Beverage;
+import Condiment.*;
+import MainDrink.*;
+
 public class StarBuzzCoffee {
     public static void main(String[] args) {
         Beverage beverage = new Espresso(Beverage.Size.GRANDE);

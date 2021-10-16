@@ -1,5 +1,7 @@
+package Beverage;
+
 public abstract class Beverage {
-    String description = "Unknown Beverage";
+    public String description = "Unknown Beverage";
     public enum Size { TALL, GRANDE, VENTI };
     Size size = Size.TALL;
 

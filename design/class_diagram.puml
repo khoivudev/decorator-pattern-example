@@ -18,10 +18,12 @@ package MainDrink <<Rectangle>> {
         cost()
     }
 }
-abstract CondimentDecorator extends Beverage {
-    getDescription()
-}
+
 package Condiment <<Rectangle>> {
+    abstract CondimentDecorator extends Beverage {
+    getDescription()
+    }
+
     class Milk extends CondimentDecorator {
         Beverage beverage 
         cost()

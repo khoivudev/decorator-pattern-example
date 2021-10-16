@@ -1,3 +1,7 @@
+package Condiment;
+
+import Beverage.Beverage;
+
 public class Milk extends CondimentDecorator {   
     public Milk(Beverage beverage) {
         this.beverage = beverage;
